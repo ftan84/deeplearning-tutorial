@@ -9,12 +9,7 @@ from keras.utils import np_utils
 K.set_image_dim_ordering('th')
 
 seed = 120
-# Add comment here
-# Another comment here
 np.random.seed(seed)
-# How about writing a whole
-# long comment here?
-# another comment line
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 num_pixels = x_train.shape[1] * x_train.shape[2]
@@ -22,7 +17,6 @@ x_train = x_train.reshape(x_train.shape[0], num_pixels).astype('float32')
 x_test = x_test.reshape(x_test.shape[0], num_pixels).astype('float32')
 x_train = x_train / 255
 x_test = x_test / 255
-# comment
 
 y_train = np_utils.to_categorical(y_train)
 y_test = np_utils.to_categorical(y_test)
