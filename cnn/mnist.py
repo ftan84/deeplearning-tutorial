@@ -63,6 +63,7 @@ y_train = np_utils.to_categorical(y_train)
 y_test = np_utils.to_categorical(y_test)
 num_classes = y_test.shape[1]
 
+# Make some changes here
 def cnn_baseline():
     model = Sequential()
     model.add(Conv2D(32, (5, 5),
