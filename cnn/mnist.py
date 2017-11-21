@@ -1,3 +1,4 @@
+'''Version 0.0.1'''
 import matplotlib.pyplot as plt
 import numpy as np
 from keras import backend as K
